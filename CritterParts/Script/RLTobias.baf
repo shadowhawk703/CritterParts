@@ -1,0 +1,18 @@
+IF
+ 	See([PC])
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+    Global("RLTobias", "GLOBAL", 0)
+    
+THEN
+	RESPONSE #100
+	Dialogue([PC])
+END
+
+
+IF
+    Global("RLTobiasLeave","GLOBAL",1)
+
+THEN 	
+	RESPONSE #100
+	EscapeAreaDestroy(1)
+END

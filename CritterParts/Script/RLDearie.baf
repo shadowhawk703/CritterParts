@@ -1,0 +1,25 @@
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+	Enemy()
+	ActionOverride("RLSildah",Enemy())
+	ActionOverride("RLSamuel",Enemy()) 
+	ActionOverride("RLHenry",Enemy()) 
+	ActionOverride("RLCaleb",Enemy())
+	ActionOverride("RLGertru",Enemy())
+	ActionOverride("RLDaisy",Enemy())
+  	Attack(LastAttackerOf(Myself))
+  	Continue()
+END
+IF
+	Allegiance(Myself,ENEMY)
+	!InParty(Myself)
+	Global("RLSpiderFight3","LOCALS",0)
+THEN
+  RESPONSE #100
+	ChangeAIScript("RLAttack",CLASS)
+	ChangeAIScript("useitem",GENERAL)
+	ChangeAIScript("",DEFAULT)
+	SetGlobal("RLSpiderFight3","LOCALS",1)
+END

@@ -1,0 +1,154 @@
+Critter Parts Readme
+
+Critter Parts_v1.1
+Authors:
+Ravenslight (raven.of.the.light@gmail.com)
+Shadowhawk (shadowhawk703@hotmail.com)
+
+This mod was developed for the Baldur’s Gate: Enhanced Edition of the game.
+
+This mod was created using the following tools:
+
+DLTC Editor pro V7.7
+NearInfinity, v1.36-2016-01-12
+WeiDU, version 238
+EE Keeper
+Photoshop CC
+Notepad++ v6.8.8
+WeiDU Syntax Highlighters v3.9
+
+
+INTRODUCTION:
+Leaving the remains of all the bears, wolves and wild dogs that my Ranger and Druid protagonist encounter to rot in the sun has always bothered me. It strikes me that they would find this not only a terrible waste of natures gifts, but disrespectful to the creatures themselves. Not to mention the twitch that my packrat self gets when whole groups of critters in the game never drop any items. Yes, I am one of those obsessive creatures that take great delight in finding tiny bits of treasure on the bodies of my vanquished foes.
+
+What started as a slight modification for my own game, grew into a small quest mod. It is a little thing that adds flavor and extra role-play possibilities. I have found myself enjoying it’s addition to my own game so much that I thought it might appeal to a few others as well.
+
+This mod adds harvestable drops to several of the critters that the PC encounters in the game. It does not change anything else about them. It will add these drops to all instances of the following types of animals that the PC encounters, with the exception of special quest specific instances.
+
+Brown Bear
+Black Bear
+Cave Bear
+Polar Bear
+Wild Dog
+War Dog
+Worg
+Wolf
+Dread Wolf
+Dire Wolf
+Vampiric Wolf
+
+The dropped items can be sold to any of the merchants in the game who will also buy miscellaneous items. Thalantyr in High Hedge, and the innkeeper in the Feldepost Inn are two such merchants available early in the game. The value of the different hides and meats vary with type.
+
+All like items stack with each other and include:
+
+Bear Meat
+Wolf Meat
+Wild Dog Meat
+Bear Hide
+Wolf Hide
+Dog Hide
+Animal Bones
+
+Additionally, all of the meat drops can be consumed by any character in your party and will return varying amounts of hit points, depending on the type of meat eaten.
+
+The meat must be placed in one of your quick slots in order for it to be consumed.
+
+THE QUEST:
+This mod includes a quest that will eventually allow your protagonist to bring a new NPC some of the dropped hides, meat or bones to have them made into a new piece of armor. The items needed are dependant on which of the three types of armor the player picks to have made. Choose carefully, he will only make one item per play-through.
+
+This mod is meant to add a bit more role-play and flavor to the game. The only fighting involved are the encounters that you would normally have with the critters in the game. These have not been modified in any way.
+
+PLEASE NOTE:
+In order to begin the quest, the player must choose to “use” the new “campfire” that appears in area AR4300, the North Nashkel Road. This is directly in front of the big campfire you find in the game after killing the band of Hobgoblins near the road. Just hover your mouse around in front of the campfire to find it at coordinates 3265,0720.
+
+As of version CritterParts_beta_v2.0 this mod has been expanded to include drops from all of the spiders that the protagonist encounters in her/his travels. A new NPC with an uncommon interest in such trinkets has been added to area AR2200, the first Cloakwood Mines, or Cloakwood Lodge map. She can be found in the north west corner of the map.
+
+I prefer to pick up as much of my party's gear from my adventures as possible. For example, finding a few fire arrows in the Nashkel Mines is much more fun for me than when I buy them. This part of the mod adds a way for my protagonist to barter for a few poison arrows, darts, or bolts, as well as Antidotes, giving me one more reason for having to kill so many... creepy crawly... shudder... spiders.
+
+INSTALLATION INSTRUCTIONS:
+Download the mod and save it to any folder on your computer that you like. I keep a mods folder on my own computer for just this purpose. Unzip the file and you should have a folder and two files.
+
+CritterParts
+setup-CritterParts_v1.1.exe
+setup-CritterParts_v1.1.tp2
+
+Place all three into your game directory. You are looking for a folder named 00766 
+
+On my own computer the path is:
+Local Disc (C:)\Program Files (x86)\Baldur’s Gate Enhanced Edition\Data\00766 (You can be sure that you have found the correct folder if it contains a file called chitin.key)
+
+Within the 00766 folder, find and double click on the file, setup-CritterParts_v1.1.exe to install the mod. A small black screen will appear to ask you if you would like to install the mod. Type I and then hit enter. When the program has finished installing the mod, hit enter again to exit out of the program. To uninstall the mod, simply run setup-CritterParts_v1.1.exe again.
+
+If you apply a patch to your game, you will need to reinstall this, or any other mods that you have installed.
+
+CREDITS:
+
+Testing and Feedback:
+Zaghoul
+
+Portraits:
+The portraits for the characters that the player encounters within this mod were taken from the works of some of the painters who’s work I admire.
+
+Tobias: Joseph Mallord William Turner (1775-1851) Self Portrait
+Mr. Tanner: Theodore Gericault (1791-1824) Portrait of a Kleptomaniac
+Sildah: Nikolai Alexeievich Kasatkin (1859-1930) Portrait of an Old Woman
+
+Some code from bgee_area_script_assign.tph generously provided by Cmorganbg/BG1NPC on GitHub.
+
+As I sit down to make a list of all the people who’s work we have benefitted from, I realize just what an impossible task that is. Starting with all of those who first took up the task of understanding how the infinity engine games work in order that we might all enjoy the mods that are available to us now. Some well known, as their names became connected to mods that became very popular, others whose mods may not have appealed to as many, yet who’s work still contributed to the common pool of knowledge, benefitting others and delighting those who did find their mods a welcome addition to their game.
+
+In our research as novice modders, we have found that the infinity engine modding community has a long history of freely sharing ideas and acquired knowledge. Some individuals even going the extra mile to create tutorials in order to help others in their learning process. We not only found these helpful, but also so many other posts with this or that tidbit that ultimately helped us figure something out. So many in fact, that it is impossible to remember what tidbit we got where, most of the time.
+
+The best I can do here is to try and name just a few who’s work we have found helpful in our quest, but our thanks go out to so many others. There are endless online discussions that we have read. Times where someone explained something that might have made it click for us. We thank every person who ever shared a line of code with someone else who was struggling to figure something out. This is a great community.
+
+We found @Alkalurops tutorial for complete beginners to be very helpful in those first days of staring at incomprehensible pages of code. For example, the way he writes a line of code out as, IF ~~ THEN REPLY instead of just, ++ was very helpful as it made it easier for us to start getting our minds wrapped around what was being said. His inclusion of small things like getting yourself a program like Notepad ++ were very helpful. Yep, we had tried using plain old Notepad that first day. Not the same… :)
+
+https://forums.beamdog.com/discussion/22536/npc-modding-tutorial/p1
+
+The tutorial mod, Branwen for BGII, by @Kulyok has been extremely helpful. She has created a tutorial right inside the mod. Excellent!
+
+http://www.pocketplane.net/mambo/index.php?option=content&task=blogcategory&id=113&Itemid=84
+
+A wealth of insight can be gained from the discussions to be found on the Beamdog, Spellhold Studios, Gibberlings 3, and Team BG forums.
+
+This mod was not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Wizards of the Coast, or Beamdog.
+
+REDISTRIBUTION NOTE: This mod is meant to be freely enjoyed by all Baldur's Gate players. However, Critter Parts may not be sold, published, compiled or redistributed in any form without the consent of its authors.
+
+HISTORY:
+
+Version 6:
+CritterParts_v1.1 May 7, 2017
+
+-As requested, spell casting is now possible while wearing the Bone Leather Vest.
+-Mr. Tanner will now ignore invisibility when initiating a conversation with the PC.
+-In preparation for planed future updates to this mod, it has been un-traified. Shadowhawk prefers working with the code in a non-traified state.
+
+Version 5:
+CritterParts_v1.0 December 12, 2016
+First non-beta release
+
+-Removed weight from all harvestable items.
+-Slightly raised value of all harvestable items.
+-Minor text edits.
+
+Version 4:
+Beta release v2.0 April 24, 2016
+
+-Expanded to include drops from spiders and added a new NPC with whom it is possible to barter in area AR2200.
+-Removed the night time requirement for the campfire to appear in area AR4300.
+
+Version 3:
+Beta release v1.2 March 3, 2016
+
+-Minor coding tweaks.
+
+Version 2:
+Beta release v1.1 February 27, 2016
+
+-Removed unintended !Alignment(Player1,MASK_EVIL) check for the campfire to spawn.
+-Fixed missing code associated with the player choosing not to help Tobias.
+-Added REQUIRE_PREDICATE GAME_IS ~bgee~ check.
+
+Version 1:
+Beta release v1.0 February 20, 2016

@@ -1,0 +1,23 @@
+IF 
+	Global("SpawnRLCamp","GLOBAL",0)
+	//TimeOfDay(Night)
+THEN 
+RESPONSE #100 
+	SetGlobal("SpawnRLCamp","GLOBAL",1) 
+	CreateCreature("RLCamp", [3265.0720], 4)
+	Continue()
+END 
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!See([ENEMY])
+	CombatCounter(0)	
+	Global("SpawnRLTobias","GLOBAL",1)
+	Global("RLCritterArmor","GLOBAL",1)	
+THEN
+RESPONSE #100		
+	CreateCreatureObjectOffset("RLTobias",Myself,[2725.2351])
+	SetGlobal("SpawnRLTobias","GLOBAL",2)
+        
+END

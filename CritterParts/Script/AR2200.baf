@@ -1,0 +1,14 @@
+IF 
+Global("RLSpawnSildah","GLOBAL",0)
+THEN 
+RESPONSE #100 
+SetGlobal("RLSpawnSildah","GLOBAL",1) 
+CreateCreature("RLSildah", [1528.0183], 3)
+CreateCreature("RLHenry", [1538.0091], 3)
+CreateCreature("RLGertru", [1479.0103], 3)
+CreateCreature("RLDearie", [1640.0177], 3)
+CreateCreature("RLSamuel", [1576.0206], 3)
+CreateCreature("RLCaleb", [1515.0229], 3)
+CreateCreature("RLDaisy", [1453.0241], 3)
+Continue()
+END 

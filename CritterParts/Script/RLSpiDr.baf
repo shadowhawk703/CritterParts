@@ -1,0 +1,24 @@
+IF
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("RLSpider","LOCALS",0)
+
+THEN
+	RESPONSE #100
+		SetGlobal("RLSpider","LOCALS",1)
+		
+END
+
+IF
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("RLSpider","LOCALS",1)
+
+THEN
+	RESPONSE #15
+		GiveItemCreate("RLSpVeB",Myself,0,0,0)
+		SetGlobal("RLSpider","LOCALS",2)
+
+	RESPONSE #90
+		GiveItemCreate("RLSpVen",Myself,0,0,0)
+		SetGlobal("RLSpider","LOCALS",2)
+END
+

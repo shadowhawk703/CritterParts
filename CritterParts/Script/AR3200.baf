@@ -1,0 +1,12 @@
+IF 
+	Global("SpawnRLMTaner","GLOBAL",0)
+	OR(3)
+		Global("RLTobiasAccept", "GLOBAL", 1)
+		Global("RLTobiasAccept", "GLOBAL", 2)
+		Global("RLTobiasAccept", "GLOBAL", 3)
+THEN 
+RESPONSE #100 
+	SetGlobal("SpawnRLMTaner","GLOBAL",1) 
+	CreateCreature("RLMTaner", [1645.1542], 2)
+	
+END 

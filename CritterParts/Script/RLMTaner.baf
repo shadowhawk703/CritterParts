@@ -1,0 +1,40 @@
+IF
+
+	See(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("SpawnRLTobias","GLOBAL",2)	
+	Global("RLCritterArmor","GLOBAL",2)
+	Global("RLTanner Notice","GLOBAL",1)
+	
+THEN
+RESPONSE #100		
+		CreateCreatureObjectOffset("RLTobias",Myself,[100.100])
+		SetGlobal("SpawnRLTobias","GLOBAL",3)
+		Dialogue([PC])		
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("RLTannerTakePRHide","GLOBAL",5)
+	Global("RLTannerTakePRMeat","GLOBAL",1)
+
+THEN
+RESPONSE #100	
+	
+		SetGlobal("RLTannerReady","GLOBAL",1)
+		SetGlobal("RLTannerTakePRHide","GLOBAL",6)
+		Dialogue([PC])
+END
+
+IF
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("RLTannerTakeBRHide","GLOBAL",5)
+	Global("RLTannerTakeBRBone","GLOBAL",1)
+
+THEN
+RESPONSE #100	
+	
+		SetGlobal("RLTannerReady","GLOBAL",1)
+		SetGlobal("RLTannerTakeBRHide","GLOBAL",6)
+		Dialogue([PC])
+END

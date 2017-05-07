@@ -1,0 +1,427 @@
+BACKUP ~CritterParts/backup~ 
+
+AUTHOR ~Shadowhawk (shadowhawk703@hotmail.com)~
+
+VERSION ~v1.1~
+
+AUTO_TRA ~CritterParts/%s~
+
+LANGUAGE
+     ~English~
+     ~English~
+     ~CritterParts/Translations/English/Setup-CritterParts_v1.1.tra~
+	 
+BEGIN ~CritterParts~ 
+
+REQUIRE_PREDICATE GAME_IS ~bgee~ ~This component requires the BG:EE version of the game.~
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+
+UNLESS ~CD_STATE_NOTVALID~
+	  
+COPY ~CritterParts/Images~ ~override~
+
+COPY ~CritterParts/Creatures/RLTobias.cre~ ~override/RLTobias.cre~
+    SAY 0x8 ~Tobias~ 
+	SAY 0xC ~Tobias~
+	WRITE_ASCII 0x248 ~RLTobias~ #8  
+	WRITE_ASCII 0x280 ~RLTobias~ #32  
+	WRITE_ASCII 0x2cc ~RLTobias~ #8   
+    WRITE_ASCII 0X34 ~RLTobyS~ #8   
+	WRITE_ASCII 0x3c ~RLTobyM~ #8   
+	
+COPY ~CritterParts/Creatures/RLCamp.cre~ ~override/RLCamp.cre~
+    SAY 0x8 ~Campfire~ 
+	SAY 0xC ~Campfire~
+	WRITE_ASCII 0x248 ~RLCamp~ #8  
+	WRITE_ASCII 0x280 ~RLCamp~ #32  
+	WRITE_ASCII 0x2cc ~RLCamp~ #8   
+    WRITE_ASCII 0X34 ~RLCampS~ #8   
+	WRITE_ASCII 0x3c ~RLCampM~ #8 
+  
+COPY ~CritterParts/Creatures/RLMTaner.cre~ ~override/RLMTaner.cre~
+    SAY 0x8 ~Mr. Tanner~ 
+	SAY 0xC ~Mr. Tanner~
+	SAY INITIAL_MEETING ~~ [genmg07] 
+	SAY SELECT_COMMON1 ~~ [genmg07]
+    SAY SELECT_COMMON2 ~~ [genmg07]
+    SAY SELECT_COMMON3 ~~ [genmg07]
+	SAY SELECT_ACTION2 ~~ [genmg07]
+    SAY SELECT_ACTION3 ~~ [genmg07]
+    SAY SELECT_ACTION4 ~~ [genmg07]
+	WRITE_ASCII 0x248 ~RLMTaner~ #8  
+	WRITE_ASCII 0x280 ~RLMTaner~ #32  
+	WRITE_ASCII 0x2cc ~RLMTaner~ #8   
+    WRITE_ASCII 0X34 ~RLMTanS~ #8   
+	WRITE_ASCII 0x3c ~RLMTanM~ #8
+
+COPY ~CritterParts/Creatures/RLSildah.cre~ ~override/RLSildah.cre~
+    SAY 0x8 ~Sildah~ 
+	SAY 0xC ~Sildah~
+	WRITE_ASCII 0x248 ~RLSildah~ #8  
+	WRITE_ASCII 0x280 ~RLSildah~ #32  
+	WRITE_ASCII 0x2cc ~RLSildah~ #8   
+    WRITE_ASCII 0X34 ~RLSildS~ #8   
+	WRITE_ASCII 0x3c ~RLSildM~ #8 
+
+COPY ~CritterParts/Creatures/RLHenry.cre~ ~override/RLHenry.cre~
+    SAY 0x8 ~Henry~ 
+	SAY 0xC ~Henry~
+	WRITE_ASCII 0x248 ~RLHenry~ #8  
+	WRITE_ASCII 0x280 ~RLHenry~ #32  
+	WRITE_ASCII 0x2cc ~RLHenry~
+
+COPY ~CritterParts/Creatures/RLGertru.cre~ ~override/RLGertru.cre~
+    SAY 0x8 ~Gertrude~ 
+	SAY 0xC ~Gertrude~
+	WRITE_ASCII 0x248 ~RLGertru~ #8  
+	WRITE_ASCII 0x280 ~RLGertru~ #32  
+	WRITE_ASCII 0x2cc ~RLGertru~        	
+
+COPY ~CritterParts/Creatures/RLDearie.cre~ ~override/RLDearie.cre~
+    SAY 0x8 ~Dearie~ 
+	SAY 0xC ~Dearie~
+	WRITE_ASCII 0x248 ~RLDearie~ #8  
+	WRITE_ASCII 0x280 ~RLDearie~ #32  
+	WRITE_ASCII 0x2cc ~RLDearie~  
+
+COPY ~CritterParts/Creatures/RLSamuel.cre~ ~override/RLSamuel.cre~
+    SAY 0x8 ~Samuel~ 
+	SAY 0xC ~Samuel~
+	WRITE_ASCII 0x248 ~RLSamuel~ #8  
+	WRITE_ASCII 0x280 ~RLSamuel~ #32  
+	WRITE_ASCII 0x2cc ~RLSamuel~        	
+
+COPY ~CritterParts/Creatures/RLCaleb.cre~ ~override/RLCaleb.cre~
+    SAY 0x8 ~Caleb~ 
+	SAY 0xC ~Caleb~
+	WRITE_ASCII 0x248 ~RLCaleb~ #8  
+	WRITE_ASCII 0x280 ~RLCaleb~ #32  
+	WRITE_ASCII 0x2cc ~RLCaleb~
+
+COPY ~CritterParts/Creatures/RLDaisy.cre~ ~override/RLDaisy.cre~
+    SAY 0x8 ~Daisy~ 
+	SAY 0xC ~Daisy~
+	WRITE_ASCII 0x248 ~RLDaisy~ #8  
+	WRITE_ASCII 0x280 ~RLDaisy~ #32  
+	WRITE_ASCII 0x2cc ~RLDaisy~        	
+
+COPY ~CritterParts/Items/RLBearM.itm~ ~override~
+SAY 0x8 ~Bear Meat~
+SAY 0xC ~Bear Meat~
+SAY 0x50 ~The rendered fat of bear meat is highly valued for it's versatility in making a variety of common necessities. Among them, lamp oil, soap and medicinal balms. Mixed with beeswax, it makes a fine grease for treating and weatherproofing leather. It's many culinary uses include it's renowned effect when used in pie crusts and pastries. Many find it a fine addition to a hearty stew.
+
+When wholly consumed, this meat restores 5 Hit Points to the person.
+(Place in quick slot.)
+
+STATISTICS:
+
+Special: Restores 5 Hit Points.~
+	
+   
+COPY ~CritterParts/Items/RLDogM.itm~ ~override~
+SAY 0x8 ~Wild Dog Meat~
+SAY 0xC ~Wild Dog Meat~	
+SAY 0x50 ~Though not popular table fare for any but the poorest of peasants, this meat has been used extensively as feed for carnivorous stock. Umber Hulks are said to be especially fond of it.
+
+When wholly consumed, this meat restores 2 Hit Points to the person.
+(Place in quick slot.)
+
+STATISTICS:
+
+Special: Restores 2 Hit Points.~
+	
+    	
+COPY ~CritterParts/Items/RLWolfM.itm~ ~override~
+SAY 0x8 ~Wolf Meat~
+SAY 0xC ~Wolf Meat~	
+SAY 0x50 ~Owing to it's tough gamey nature, wolf meat is rarely popular table fare, though it can be welcome sustenance for a hungry adventuring party.
+
+When wholly consumed, this meat restores 3 Hit Points to the person.
+(Place in quick slot.)
+
+STATISTICS:
+
+Special: Restores 3 Hit Points.~
+	
+COPY ~CritterParts/Items/RLWolfH.itm~ ~override~
+SAY 0x8 ~Wolf Hide~
+SAY 0xC ~Wolf Hide~	
+SAY 0x50 ~A properly skinned and fleshed hide can bring a fine price at market.~
+
+COPY ~CritterParts/Items/RLBearH.itm~ ~override~
+SAY 0x8 ~Bear Hide~
+SAY 0xC ~Bear Hide~	
+SAY 0x50 ~A properly skinned and fleshed hide can bring a fine price at market.~
+
+COPY ~CritterParts/Items/RLDogH.itm~ ~override~
+SAY 0x8 ~Dog Hide~
+SAY 0xC ~Dog Hide~	
+SAY 0x50 ~A properly skinned and fleshed hide can bring a fine price at market.~
+
+COPY ~CritterParts/Items/RLAniBo.itm~ ~override~
+SAY 0x8 ~Animal Bones~
+SAY 0xC ~Animal Bones~	
+SAY 0x50 ~Animal bones have many practical uses in the fashioning of clothing and armor. They are also often used in ritualistic and religious ceremonies, or simply carved into whimsical figures to delight children. Ground into a fine powder, they have many uses in magical and medicinal potions. In a pinch, a large heavy bone can make a fine club.~
+
+COPY ~CritterParts/Items/RLToBody.itm~ ~override~
+SAY 0x8 ~Tobias~
+SAY 0xC ~Tobias~	
+SAY 0x50 ~Though he will undoubtably slow the party down, what else can you do? There is no way the boy can make it back home without your help. Thankfully, with your assistance he is able to bear some of his own weight on his one good leg.
+
+STATISTICS:
+
+Weight: 50~
+
+COPY ~CritterParts/Items/RLDruidL.itm~ ~override~
+SAY 0x8 ~Tough Leather Coat~
+SAY 0xC ~Tough Leather Coat~
+SAY 0x50 ~The superior craftsmanship that went into the making of this coat is evident. The soft, yet tough leather of this garment is surprisingly resistant to puncture. Whether it be by tooth, claw, or a would-be assassin's arrow.
+
+Armor Class: 5 (3 vs. piercing and missile)
+
+Requires: 4 Strength
+
+Weight: 5~
+
+SAY 0x54 ~The superior craftsmanship that went into the making of this vest is evident. The soft, yet tough leather of this garment is surprisingly resistant to puncture. Whether it be by tooth, claw, or a would-be assassin's arrow.
+
+Armor Class: 5 (3 vs. piercing and missile)
+
+Requires: 4 Strength
+
+Weight: 5~
+
+COPY ~CritterParts/Items/RLMageL.itm~ ~override~
+SAY 0x8 ~Silken Leather Robe~
+SAY 0xC ~Silken Leather Robe~
+SAY 0x50 ~The superior craftsmanship that went into the making of this robe is evident. Despite it's protective nature, it offers no resistance to even the subtlest of movements. Soft and supple as silk, it flows with every gentle gesture, offering no encumbrance to spell casting.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Fire Resistance: +5%
+- Cold Resistance: +5%
+- Electrical Resistance: +5%
+- Acid Resistance: +5%
+
+
+Weight: 3~
+
+SAY 0x54 ~The superior craftsmanship that went into the making of this robe is evident. Despite it's protective nature, it offers no resistance to even the subtlest of movements. Soft and supple as silk, it flows with every gentle gesture, offering no encumbrance to spell casting.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Fire Resistance: +5%
+- Cold Resistance: +5%
+- Electrical Resistance: +5%
+- Acid Resistance: +5%
+
+
+Weight: 3~
+
+
+COPY ~CritterParts/Items/RLBoneL.itm~ ~override~
+SAY 0x8 ~Bone Leather Vest~
+SAY 0xC ~Bone Leather Vest~
+SAY 0x50 ~The superior craftsmanship that went into the making of this vest is evident. Lightweight, yet tough as chain mail. With the added benefit of being more resistant to piercing damage than most chain armors.
+
+Armor Class: 3 (1 vs. piercing and missile, 6 vs. crushing)
+
+Requires: 8 Strength
+
+Weight: 8~
+
+SAY 0x54 ~The superior craftsmanship that went into the making of this vest is evident. Lightweight, yet tough as chain mail. With the added benefit of being more resistant to piercing damage than most chain armors.
+
+Armor Class: 3 (1 vs. piercing and missile, 6 vs. crushing)
+
+Requires: 8 Strength
+
+Weight: 8~
+
+COPY ~CritterParts/Items/RLSpVen.itm~ ~override~
+SAY 0x8 ~Spider Venom~
+SAY 0xC ~Spider Venom~
+SAY 0x50 ~Careless handling of this deadly substance has had unfortunate consequences for more than one would-be assassin.~
+
+SAY 0x54 ~Careless handling of this deadly substance has had unfortunate consequences for more than one would-be assassin.~
+
+COPY ~CritterParts/Items/RLSpVeB.itm~ ~override~
+SAY 0x8 ~Intact Spider Body~
+SAY 0xC ~Intact Spider Body~
+SAY 0x50 ~This spider is still intact enough to tempt you to poke it again, just to make sure it is indeed dead.~
+
+SAY 0x54 ~This spider is still intact enough to tempt you to poke it again, just to make sure it is indeed dead.~
+
+COPY_EXISTING ~BearBl.cre~ ~override/BearBl.cre~ 
+	SAY 0x8 ~Black Bear~
+	SAY 0xC ~Black Bear~
+	ADD_CRE_ITEM ~RLBearM~ #0 #0 #0 ~NONE~ ~inv15~ 
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLBearH~ #0 #0 #0 ~NONE~ ~inv13~ 
+ 
+COPY_EXISTING ~BearBr.cre~ ~override/BearBr.cre~ 
+	SAY 0x8 ~Brown Bear~
+    SAY 0xC ~Brown Bear~
+	ADD_CRE_ITEM ~RLBearM~ #0 #0 #0 ~NONE~ ~inv15~
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLBearH~ #0 #0 #0 ~NONE~ ~inv13~ 
+	
+COPY_EXISTING ~BearPo.cre~ ~override/BearPo.cre~ 
+	SAY 0x8 ~Polar Bear~
+	SAY 0xC ~Polar Bear~
+	ADD_CRE_ITEM ~RLBearM~ #0 #0 #0 ~NONE~ ~inv15~
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLBearH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~BearCa.cre~ ~override/BearCa.cre~ 
+	SAY 0x8 ~Cave Bear~
+	SAY 0xC ~Cave Bear~
+	ADD_CRE_ITEM ~RLBearM~ #0 #0 #0 ~NONE~ ~inv15~
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLBearH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~DogWa.cre~ ~override/DogWa.cre~ 
+	SAY 0x8 ~War Dog~
+	SAY 0xC ~War Dog~
+	ADD_CRE_ITEM ~RLDogM~ #0 #0 #0 ~NONE~ ~inv15~
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLDogH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~DogWi.cre~ ~override/DogWi.cre~ 
+	SAY 0x8 ~Wild Dog~
+	SAY 0xC ~Wild Dog~
+	ADD_CRE_ITEM ~RLDogM~ #0 #0 #0 ~NONE~ ~inv15~
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLDogH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~Worg.cre~ ~override/Worg.cre~ 
+	SAY 0x8 ~Worg~
+	SAY 0xC ~Worg~
+	ADD_CRE_ITEM ~RLWolfM~ #0 #0 #0 ~NONE~ ~inv15~
+	ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLWolfH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~Wolf.cre~ ~override/Wolf.cre~ 
+	SAY 0x8 ~Wolf~
+	SAY 0xC ~Wolf~
+	ADD_CRE_ITEM ~RLWolfM~ #0 #0 #0 ~NONE~ ~inv15~
+    ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLWolfH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~WolfDr.cre~ ~override/WolfDr.cre~ 
+	SAY 0x8 ~Dread Wolf~
+	SAY 0xC ~Dread Wolf~
+	ADD_CRE_ITEM ~RLWolfM~ #0 #0 #0 ~NONE~ ~inv15~
+    ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLWolfH~ #0 #0 #0 ~NONE~ ~inv13~ 
+
+COPY_EXISTING ~WolfDi.cre~ ~override/WolfDi.cre~ 
+	SAY 0x8 ~Dire Wolf~
+	SAY 0xC ~Dire Wolf~
+	ADD_CRE_ITEM ~RLWolfM~ #0 #0 #0 ~NONE~ ~inv15~
+    ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLWolfH~ #0 #0 #0 ~NONE~ ~inv13~
+
+COPY_EXISTING ~WolfVa.cre~ ~override/WolfVa.cre~ 
+	SAY 0x8 ~Vampiric Wolf~
+	SAY 0xC ~Vampiric Wolf~
+	ADD_CRE_ITEM ~RLWolfM~ #0 #0 #0 ~NONE~ ~inv15~
+    ADD_CRE_ITEM ~RLAniBo~ #0 #0 #0 ~NONE~ ~inv14~ 
+	ADD_CRE_ITEM ~RLWolfH~ #0 #0 #0 ~NONE~ ~inv13~
+
+COPY_EXISTING ~Spidhu.cre~ ~override/Spidhu.cre~ 
+	SAY 0x8 ~Huge Spider~
+	SAY 0xC ~Huge Spider~
+	WRITE_ASCII 0x248 ~RLSpiDr~ #8 
+COPY_EXISTING ~Spidsw.cre~ ~override/Spidsw.cre~ 
+	SAY 0x8 ~Sword Spider~
+	SAY 0xC ~Sword Spider~
+	WRITE_ASCII 0x248 ~RLSpiDr~ #8 
+
+COPY_EXISTING ~Spidgi.cre~ ~override/Spidgi.cre~ 
+	SAY 0x8 ~Giant Spider~
+	SAY 0xC ~Giant Spider~
+	WRITE_ASCII 0x248 ~RLSpiDr~ #8 
+
+COPY_EXISTING ~Spidwr.cre~ ~override/Spidwr.cre~ 
+	SAY 0x8 ~Wraith Spider~
+	SAY 0xC ~Wraith Spider~
+	WRITE_ASCII 0x248 ~RLSpiDr~ #8 
+
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLSpiDr.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLTobias.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLTobias.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLMTaner.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLMTaner.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLCamp.d~	
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLCamp.baf~
+COMPILE EVALUATE_BUFFER	~CritterParts/Script/RLAttack.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLSildah.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLSildah.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLHenry.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLHenry.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLGertru.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLGertru.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLDearie.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLDearie.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLSamuel.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLSamuel.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLCaleb.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLCaleb.d~
+COMPILE EVALUATE_BUFFER ~CritterParts/Script/RLDaisy.baf~
+COMPILE EVALUATE_BUFFER ~CritterParts/Dialog/RLDaisy.d~
+
+
+//Code borrowed from bg1npc.tp2
+
+ACTION_IF FILE_EXISTS_IN_GAME ~AR4300.are~ THEN BEGIN
+
+		COPY_EXISTING ~AR4300.are~ ~override~
+		WRITE_EVALUATED_ASCII 0x94 ~%SOURCE_RES%~ #8 // area script
+	BUT_ONLY_IF_IT_CHANGES
+END
+        /* AR4300.BCS is inactive in vanilla BGEE and will create a second Colquetle Family Amulet if activated.  False()-ing the script block to prevent it from executing. */
+ACTION_IF FILE_EXISTS_IN_GAME ~AR4300.bcs~ THEN BEGIN
+COPY_EXISTING ~AR4300.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          REPLACE_TEXTUALLY CASE_INSENSITIVE ~Global("PoorMrColquetleFamily","GLOBAL",0)~ ~False()~
+        END
+    BUT_ONLY_IF_IT_CHANGES
+ END 
+
+EXTEND_TOP ~AR4300.bcs~ ~CritterParts/Script/AR4300.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR2200.bcs~ ~CritterParts/Script/AR2200.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR3200.bcs~ ~CritterParts/Script/AR3200.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~pspider.bcs~ ~CritterParts/Script/RLSpiDr.baf~
+
+APPEND ~pdialog.2da~ 
+~RLTobias~ 
+UNLESS ~RLTobias~ 
+
+APPEND ~interdia.2da~ 
+~RLTobias~ 
+UNLESS ~RLTobias~
+	
+APPEND ~pdialog.2da~ 
+~RLCamp~ 
+UNLESS ~RLCamp~ 
+
+APPEND ~interdia.2da~ 
+~RLCamp~ 
+UNLESS ~RLCamp~
+
+APPEND ~pdialog.2da~ 
+~RLMTaner~ 
+UNLESS ~RLMTaner~ 
+
+APPEND ~interdia.2da~ 
+~RLMTaner~ 
+UNLESS ~RLMTaner~
+	
